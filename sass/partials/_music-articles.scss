@@ -1,0 +1,28 @@
+article{
+	width: $width-article;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+	padding:.5rem;
+	h1, p{
+		text: {
+        	align: center;
+    	}
+	}
+	.image-container{
+		margin-top:0;
+	}
+	img{
+		width: $width-article;
+		height: auto;
+	}
+	@media all and (max-width: $littles-medias){
+        width:90%;
+        margin:auto;
+        img{
+        	width:100%;
+        }
+    }
+}
+
+.button-see{
+	@include button($main-color, $paragraph-font);
+}

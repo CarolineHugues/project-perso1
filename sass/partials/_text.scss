@@ -1,0 +1,17 @@
+h1{
+	font-family: $main-font;
+	color: $main-color;
+}
+
+p{
+	font-family: $paragraph-font;
+}
+
+a{
+	text:{
+		decoration:none;
+	}
+	:hover{
+		cursor:pointer;
+	}
+}
