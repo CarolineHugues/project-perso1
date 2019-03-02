@@ -1,0 +1,13 @@
+#slideshow-section, #arrow-left, #arrow-right{
+	display: -moz-flexbox;
+	display: -webkit-box;
+  	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:flex;
+}
+
+#slideshow-container{
+	width:$width-slideshow-container;
+	height:$height-article + 20px;
+	overflow: hidden;
+}
