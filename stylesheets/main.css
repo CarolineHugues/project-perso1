@@ -4,7 +4,33 @@ html {
 /* -------------- Text ----------------*/
 h1 {
   font-family: "Srisakdi", cursive;
-  color: #816d13; }
+  color: #816d13;
+  font-size: 2.5rem; }
+
+h2 {
+  font-family: "Srisakdi", cursive;
+  color: #816d13;
+  font-size: 2rem; }
+
+h3 {
+  font-family: "Srisakdi", cursive;
+  color: #816d13;
+  font-size: 1.5rem; }
+
+h4 {
+  font-family: "Srisakdi", cursive;
+  color: #816d13;
+  font-size: 1.3rem; }
+
+h5 {
+  font-family: "Srisakdi", cursive;
+  color: #816d13;
+  font-size: 1.2rem; }
+
+h6 {
+  font-family: "Srisakdi", cursive;
+  color: #816d13;
+  font-size: 1rem; }
 
 p {
   font-family: "Lato", sans-serif; }
@@ -22,7 +48,6 @@ header {
   background-position: 50% 36%; }
   header h1 {
     text-align: center;
-    font-size: 42px;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     padding-top: 0.5rem;
@@ -43,6 +68,8 @@ header {
 #slideshow-section {
   margin-top: 30px;
   justify-content: center; }
+  #slideshow-section h1 {
+    font-size: 1rem; }
 
 #arrow-left, #arrow-right {
   font-size: 30px;

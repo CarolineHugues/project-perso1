@@ -1,9 +1,12 @@
-h1{
-	font-family: $main-font;
+@each $title, $font-size in (h1, 2.5rem), (h2, 2rem), (h3, 1.5rem), (h4, 1.3rem), (h5, 1.2rem), (h6, 1rem) {
+  #{$title} {
+  	font-family: $main-font;
 	color: $main-color;
+    font-size: $font-size;
+  }
 }
 
-p{
+p {
 	font-family: $paragraph-font;
 }
 
