@@ -85,9 +85,15 @@ header {
     display: block;
     margin: .5rem auto 0;
     background-color: #816d13;
+    border: outset #816d13;
     font-family: "Lato", sans-serif;
-    font-size: 1.25rem;
-    text-align: center; }
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+    #slideshow article .button-see:hover {
+      border: none;
+      padding: 0.7rem; }
     @media all and (max-width: 460px) {
       #slideshow article .button-see {
         width: 80%; } }

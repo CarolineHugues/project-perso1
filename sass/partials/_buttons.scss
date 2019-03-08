@@ -5,12 +5,19 @@
     display: block;
     margin: .5rem auto 0;
     background-color: $background-color;
+    border: outset $background-color;
     font: {
         family: $font;
-        size: 1.25rem;
+        size: 1rem;
+        weight:bold;
     }
     text: {
         align: center;
+        transform: uppercase;
+    }
+    &:hover {
+        border: none;
+        padding: 0.7rem;
     }
     @media all and (max-width: $littles-medias){
         width:80%;
