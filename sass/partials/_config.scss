@@ -1,0 +1,13 @@
+html{
+	width:100%;
+}
+
+$main-font: 'Srisakdi', cursive;
+$paragraph-font: 'Lato', sans-serif;
+$main-color: #816d13;
+$littles-medias:460px;
+$width-article:380px;
+$height-article:430px;
+@function width-slideshow($number-article-by-slide){
+	@return $width-article * $number-article-by-slide;
+}
