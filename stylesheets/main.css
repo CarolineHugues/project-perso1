@@ -40,26 +40,43 @@ header {
   display: -ms-flexbox;
   display: flex; }
 
+#slideshow-section {
+  margin-top: 30px;
+  justify-content: center; }
+
+#arrow-left, #arrow-right {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  padding: 15px;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+
+#arrow-left:hover, #arrow-right:hover {
+  cursor: pointer; }
+
 #slideshow-container {
-  width: 600px;
-  height: 410px;
-  overflow: hidden; }
+  width: 760px;
+  overflow: hidden;
+  height: 430px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
 
 #slideshow article {
   position: relative;
   float: left;
-  width: 300px;
-  height: 390px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  width: 380px;
+  height: 430px; }
   #slideshow article h1, #slideshow article p {
     text-align: center; }
   #slideshow article .image-container {
     margin-top: 0; }
   #slideshow article img {
-    width: 290px;
-    height: auto;
+    width: 340px;
+    height: 225px;
+    size: cover;
     margin: auto; }
   #slideshow article .button-see {
     padding: .5rem;
