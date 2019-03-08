@@ -4,7 +4,7 @@ gutter: 30px);
 
 $grid--cellphone: (
   columns: 1,
-  media: "(max-width: 459px)",
+  media: "(max-width: #{$littles-medias})",
 );
 
 .container {
