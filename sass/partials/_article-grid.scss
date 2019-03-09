@@ -1,0 +1,25 @@
+$grid: (
+columns: 2,
+gutter: 30px);
+
+$grid--cellphone: (
+  columns: 1,
+  media: "(max-width: #{$littles-medias})",
+);
+
+.container {
+  	@include grid-container;
+	margin: 30px 0;
+	.simple {
+ 		@include grid-column(1, $grid);
+ 		@include grid-media($grid--cellphone) {
+    		@include grid-column(1);
+  		}
+	}
+	.double {
+ 		@include grid-column(2, $grid);
+ 		@include grid-media($grid--cellphone) {
+    		@include grid-column(1);
+  		}
+	}
+}

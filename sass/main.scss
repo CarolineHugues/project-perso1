@@ -1,0 +1,21 @@
+@import "neat/neat";
+@import 'partials/config';
+@import 'partials/buttons';
+@import 'partials/flex-box';
+
+/* -------------- Text ----------------*/
+@import 'partials/text';
+
+/* -------------- Header ----------------*/
+@import 'partials/header';
+
+/* -------------- Music Carouel ----------------*/
+@import 'partials/carousel';
+@import 'partials/carousel-slide';
+
+/* -------------- Article with grid ----------------*/
+@import 'partials/article';
+@import 'partials/article-grid';
+
+/* -------------- Footer ----------------*/
+@import 'partials/footer';

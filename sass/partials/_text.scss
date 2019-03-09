@@ -1,0 +1,22 @@
+@each $title, $font-size, $color in (h1, 3rem, $main-color), (h2, 1.5rem), (h3, 1.4rem), (h4, 1.3rem), (h5, 1.2rem), (h6, 1rem) {
+  #{$title} {
+  	font-family: $main-font;
+	color: $color;
+    font-size: $font-size;
+    margin:20px 0px;
+  }
+}
+
+p {
+	font-family: $paragraph-font;
+	text-align: justify;
+}
+
+a{
+	text:{
+		decoration:none;
+	}
+	:hover{
+		cursor:pointer;
+	}
+}
