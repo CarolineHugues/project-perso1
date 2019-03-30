@@ -1,0 +1,14 @@
+@mixin display-flex{	
+	display: -moz-flexbox;
+	display: -webkit-box;
+  	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:flex;
+}
+
+@mixin align-items($alignement) {
+	-moz-align-items:$alignement;
+	-webkit-align-items:$alignement;
+	-ms-align-items:$alignement;
+	align-items:$alignement;
+}

@@ -1,0 +1,51 @@
+.music-article{
+	.music-video{
+		text-align:center;
+		margin-top:30px;
+		position:relative;
+		.background{
+			background:{
+				size: cover;
+				position:50% 75%;
+			}
+			height:$height-article;
+			width:auto;
+			filter: blur(0px);
+		}
+		video{
+			width:40%;
+			margin-left:-20%;
+			margin-top:10%;
+			position: absolute;
+			top:0;
+			z-index: 9999;
+			@media all and (max-width: $mediums-medias)
+			{
+				width:60%;	
+				margin-left:-30%;
+			}
+			@media all and (max-width: $littles-medias)
+			{
+				width:90%;
+				margin-left:-45%;
+			}
+		}
+	}
+	h1{
+		margin-top:100px;
+		@media all and (max-width: $mediums-medias)
+		{
+			margin-top:0;
+		}
+	}
+	h1, h2{
+		text-align:center;
+	}
+	p{
+		font:{
+			family: $article-paragraph-font;
+			size: 1.3rem;
+		}
+		line-height: 2rem;
+	}
+}

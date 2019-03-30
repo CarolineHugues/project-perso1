@@ -1,0 +1,17 @@
+html{
+	width:100%;
+}
+
+$main-font: 'Srisakdi', cursive;
+$paragraph-font: 'Lato', sans-serif;
+$article-paragraph-font : 'Special Elite', cursive;
+$main-color: #816d13;
+$littles-medias:460px;
+$mediums-medias: 768px;
+$width-article:380px;
+$width-article-medium:250px;
+$height-article:430px;
+$height-article-medium:300px;
+@function width-slideshow($width-article, $number-article-by-slide){
+	@return $width-article * $number-article-by-slide;
+}
