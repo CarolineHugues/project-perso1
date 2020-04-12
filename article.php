@@ -42,7 +42,7 @@ while ($article = $response->fetch()){
     	</div>
     </section>
 
-    <section>
+    <nav>
     	<p>
         <a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $previous_article; ?>">Ville précédante</a>
         -
@@ -50,7 +50,7 @@ while ($article = $response->fetch()){
     		- 
     		<a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $next_article; ?>">Ville suivante</a>
     	</p>
-    </section>
+    </nav>
   </article>
 <?php 
 }
