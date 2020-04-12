@@ -169,7 +169,6 @@ header {
 
 /* -------------- Article with grid ----------------*/
 .music-article .music-video {
-  text-align: center;
   margin-top: 30px;
   position: relative; }
   .music-article .music-video .background {
@@ -180,7 +179,7 @@ header {
     filter: blur(0px); }
   .music-article .music-video video {
     width: 40%;
-    margin-left: -20%;
+    margin-left: 30%;
     margin-top: 10%;
     position: absolute;
     top: 0;
@@ -204,6 +203,8 @@ header {
   font-family: "Special Elite", cursive;
   font-size: 1.3rem;
   line-height: 2rem; }
+.music-article#article-3 .music-video video {
+  margin-top: 15%; }
 
 .container {
   margin: 30px 0; }
