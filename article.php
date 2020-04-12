@@ -6,7 +6,7 @@ $response->execute(array(':id' => $_GET['id']));
 
 while ($article = $response->fetch()){
 ?>
-  <article class="music-article">
+  <article id="article-<?php echo $_GET['id']?>" class="music-article">
     <section class="music-video">
       <div class="background"></div>
     	<video data-video=<?php echo $_GET['id']?> preload controls>
