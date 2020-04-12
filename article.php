@@ -1,5 +1,20 @@
 <?php include 'header.php'; 
-include 'bdd-connection.php'; 
+include 'bdd-connection.php';
+
+$number_articles = $bdd->query('SELECT COUNT(*) FROM articles')->fetchColumn();
+if ($_GET['id'] == $number_articles) {
+	$next_article = 1;
+}
+else {
+	$next_article = $_GET['id'] + 1;
+}
+
+if ($_GET['id'] == 1) {
+	$previous_article = $number_articles;
+}
+else {
+	$previous_article = $_GET['id'] - 1;
+}
 
 $response = $bdd->prepare('SELECT * FROM articles WHERE id = :id');
 $response->execute(array(':id' => $_GET['id']));
@@ -25,6 +40,16 @@ while ($article = $response->fetch()){
   	 <div class="simple">
     		<p><?php echo $article['content2'];?></p>
     	</div>
+    </section>
+
+    <section>
+    	<p>
+        <a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $previous_article; ?>">Ville précédante</a>
+        -
+    		<a href="http://localhost/project-sass-music-travel/">Accueil</a>
+    		- 
+    		<a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $next_article; ?>">Ville suivante</a>
+    	</p>
     </section>
   </article>
 <?php 
