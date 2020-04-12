@@ -1,6 +1,6 @@
 <?php
 include('template.php');
-$request = $pdo->prepare("SELECT * FROM `articles`");
+$request = $pdo->prepare("SELECT * FROM `articles` ORDER BY id ASC");
 if( $request->execute() ){
 	$results = $request->fetchAll();
 	$success = true;
