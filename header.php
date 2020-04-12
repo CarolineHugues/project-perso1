@@ -13,6 +13,8 @@
 	<script src="js/jquery-3.3.1.min.js"></script> 
 </head>
 <body>
-	<header>
-		<h1>Musique & voyages</h1>
-	</header>
+	<a href="http://localhost/project-sass-music-travel/">
+		<header>
+			<h1>Musique & voyages</h1>
+		</header>
+	</a>
