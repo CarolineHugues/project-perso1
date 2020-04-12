@@ -43,13 +43,16 @@ while ($article = $response->fetch()){
     </section>
 
     <nav>
-    	<p>
-        <a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $previous_article; ?>">Ville précédante</a>
-        -
-    		<a href="http://localhost/project-sass-music-travel/">Accueil</a>
-    		- 
-    		<a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $next_article; ?>">Ville suivante</a>
-    	</p>
+      <div id="arrow-nav"></div>
+    	<div id="nav-links" class="hide">
+        <p>
+          <a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $previous_article; ?>">Ville précédante</a>
+          -
+          <a href="http://localhost/project-sass-music-travel/">Accueil</a>
+          - 
+          <a href="http://localhost/project-sass-music-travel/article.php?id=<?php echo $next_article; ?>">Ville suivante</a>
+        </p>
+      </div>
     </nav>
   </article>
 <?php 

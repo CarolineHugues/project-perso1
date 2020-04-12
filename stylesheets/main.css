@@ -168,6 +168,17 @@ header {
     height: auto; }
 
 /* -------------- Article with grid ----------------*/
+.music-article h1 {
+  margin-top: 100px; }
+  @media all and (max-width: 768px) {
+    .music-article h1 {
+      margin-top: 0; } }
+.music-article h1, .music-article h2 {
+  text-align: center; }
+.music-article p {
+  font-family: "Special Elite", cursive;
+  font-size: 1.3rem;
+  line-height: 2rem; }
 .music-article .music-video {
   margin-top: 30px;
   position: relative; }
@@ -187,22 +198,48 @@ header {
     @media all and (max-width: 768px) {
       .music-article .music-video video {
         width: 60%;
-        margin-left: -30%; } }
+        margin-left: 20%; } }
     @media all and (max-width: 460px) {
       .music-article .music-video video {
         width: 90%;
-        margin-left: -45%; } }
-.music-article h1 {
-  margin-top: 100px; }
-  @media all and (max-width: 768px) {
-    .music-article h1 {
-      margin-top: 0; } }
-.music-article h1, .music-article h2 {
-  text-align: center; }
-.music-article p {
-  font-family: "Special Elite", cursive;
-  font-size: 1.3rem;
-  line-height: 2rem; }
+        margin-left: 5%; } }
+.music-article nav {
+  margin-top: 150px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #816d13; }
+  .music-article nav #arrow-nav {
+    height: 20px;
+    width: 20px;
+    background-image: url("../images/icons/arrow.svg");
+    background-size: contain;
+    transform: rotate(-90deg);
+    margin-left: auto;
+    margin-right: 10%;
+    transition: all 0.3s ease-in-out; }
+    .music-article nav #arrow-nav.close {
+      transform: rotate(90deg); }
+  .music-article nav #nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 98.8%;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: 79px;
+    background-color: #816d13; }
+    .music-article nav #nav-links p {
+      font-size: 1.1em;
+      letter-spacing: 0.3em; }
+      .music-article nav #nav-links p a {
+        color: inherit;
+        text-transform: uppercase; }
+        .music-article nav #nav-links p a:hover {
+          color: white; }
+    .music-article nav #nav-links.hide {
+      height: 0;
+      opacity: 0; }
 .music-article#article-3 .music-video video {
   margin-top: 15%; }
 
@@ -233,6 +270,10 @@ header {
 
 /* -------------- Footer ----------------*/
 footer p {
+  color: white;
+  background-color: #816d13;
+  margin: 0;
+  padding: 10px 0;
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
