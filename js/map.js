@@ -14,7 +14,7 @@ $( function() {
       }).addTo(myMap);
       for (var i = 0; i < data.result.articles.length; i++) {
         var marker = L.marker([data.result.articles[i].lat, data.result.articles[i].lon]);
-        marker.bindPopup('<a href="http://localhost/project-sass-music-travel/article.php?id=/' + data.result.articles[i].id + '">' + data.result.articles[i].title + '</a>' + '<br/> ' + data.result.articles[i].description);
+        marker.bindPopup('<a href="http://localhost/project-sass-music-travel/article.php?id=' + data.result.articles[i].id + '">' + data.result.articles[i].title + '</a>' + '<br/> ' + data.result.articles[i].description);
         markerClusters.addLayer(marker); 
         markers.push(marker);
       } 
