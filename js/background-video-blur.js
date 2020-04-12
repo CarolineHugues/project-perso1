@@ -7,12 +7,10 @@ $.getJSON('http://localhost/project-sass-music-travel/api/articles-data.php', fu
 	background[0].style.backgroundImage = "url(" + data.result.articles[videoI].background +")";
 });
 
-video.addEventListener("click", function(){
-	var backgroundStyle = background[0].style.filter;
-	if (backgroundStyle === 'blur(5px)'){
-		background[0].style.filter = 'blur(0px)';
-	}
-	else{
-		background[0].style.filter = 'blur(5px)';
-	}
+video.addEventListener("play", function(){
+	background[0].style.filter = 'blur(5px)';
+});
+
+video.addEventListener("pause", function(){
+	background[0].style.filter = 'blur(0px)';
 });
