@@ -85,9 +85,10 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center; }
     #slideshow-section #arrow-left:hover, #slideshow-section #arrow-right:hover {
       cursor: pointer; }
@@ -220,9 +221,21 @@ header {
     .music-article nav #arrow-nav.close {
       transform: rotate(90deg); }
   .music-article nav #nav-links {
+    display: -moz-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     height: 100px;
     width: 98.8%;
     transition: all 0.3s ease-in-out;
